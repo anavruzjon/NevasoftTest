@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation.xml"
+    app:startDestination="@id/inputPhoneNumberFragment">
+    <fragment
+        android:id="@+id/inputPhoneNumberFragment"
+        android:name="com.nakhmadov.nevasofttest.ui.input_phone_number.InputPhoneNumberFragment"
+        android:label="input_phone_number_fragment"
+        tools:layout="@layout/fragment_input_phone_number">
+        <action
+            android:id="@+id/action_inputPhoneNumberFragment_to_verifyPhoneNumberFragment"
+            app:destination="@id/verifyPhoneNumberFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/fade_out"
+            app:popEnterAnim="@anim/fade_in"
+            app:popExitAnim="@anim/slide_out_right" />
+    </fragment>
+    <fragment
+        android:id="@+id/verifyPhoneNumberFragment"
+        android:name="com.nakhmadov.nevasofttest.ui.verify_number.VerifyPhoneNumberFragment"
+        android:label="VerifyPhoneNumberFragment"
+        tools:layout="@layout/fragment_verify_phone_number">
+        <argument
+            android:name="phoneNumber"
+            app:argType="string" />
+        <action
+            android:id="@+id/action_verifyPhoneNumberFragment_to_inputPhoneNumberFragment"
+            app:destination="@id/inputPhoneNumberFragment"
+            app:enterAnim="@anim/slide_in_left"
+            app:exitAnim="@anim/fade_out"
+            app:popEnterAnim="@anim/fade_in"
+            app:popExitAnim="@anim/slide_out_left" />
+        <action
+            android:id="@+id/action_verifyPhoneNumberFragment_to_welcomeFragment"
+            app:destination="@id/welcomeFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/fade_out"
+            app:popEnterAnim="@anim/fade_in"
+            app:popExitAnim="@anim/slide_out_right" />
+    </fragment>
+    <fragment
+        android:id="@+id/welcomeFragment"
+        android:name="com.nakhmadov.nevasofttest.ui.welcome.WelcomeFragment"
+        android:label="fragment_welcome"
+        tools:layout="@layout/fragment_welcome">
+        <argument
+            android:name="phoneNumber"
+            app:argType="string" />
+        <action
+            android:id="@+id/action_welcomeFragment_to_inputPhoneNumberFragment"
+            app:destination="@id/inputPhoneNumberFragment"
+            app:enterAnim="@anim/slide_in_left"
+            app:exitAnim="@anim/fade_out"
+            app:popEnterAnim="@anim/fade_in"
+            app:popExitAnim="@anim/slide_out_left" />
+    </fragment>
+</navigation>

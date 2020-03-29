@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">NevasoftTest</string>
+    <string name="allowed_number">7911 111-11-11</string>
+    <string name="logout">Выход</string>
+    <string name="welcome">Добро пожаловать, +%s</string>
+    <string name="resend_sms">Повторить SMS</string>
+    <string name="wrong_number">Невеный номер?</string>
+    <string name="verify">Подтвердить +%s</string>
+    <string name="no_such_number_in_db">Пользователь с таким номером не существует в базе данных.</string>
+    <string name="edit">ИЗМЕНИТЬ</string>
+    <string name="ok">ОК</string>
+    <string name="invalid_phone_number_warning">Вы ввели некорректный номер телефона.</string>
+    <string name="phone_number_hint">Номер телефона</string>
+    <string name="continue_text_btn">Далее</string>
+    <string name="sms_send_message">Приложение отправит SMS-сообщение, чтобы подтвердить ваш номер телефона</string>
+    <string name="enter_your_phone_number">Введите свой номер телефона</string>
+    <string name="confirmation_message_text_1">"Будет подтвреждён следующий номер телефона: "</string>
+    <string name="confirmation_message_text_2">Вы согласны или хотите изменить номер?</string>
+    <string name="verifying_text_2">" "</string>
+    <string name="verifying_text_1">Введите код из SMS, отправленный на номер</string>
+    <string name="failed_pin_code">Введён неверный код. Повторите пожалуйста ещё раз.</string>
+</resources>

@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">NevasoftTest</string>
+    <string name="enter_your_phone_number">Enter your phone number</string>
+    <string name="sms_send_message">This application will send you an SMS message to verify your phone number.</string>
+    <string name="continue_text_btn">Next</string>
+    <string name="phone_number_hint">Phone number</string>
+    <string name="invalid_phone_number_warning">The phone number you entered is invalid</string>
+
+    <string name="confirmation_message_text_1">We will be verifying the phone number:</string>
+    <string name="confirmation_message_text_2">Is this OK, or would you like to edit the number?</string>
+    <string name="ok">OK</string>
+    <string name="edit">EDIT</string>
+    <string name="no_such_number_in_db">There is no such number in db</string>
+    <string name="allowed_number">7911 111-11-11</string>
+    <string name="verify">Verify +%s</string>
+    <string name="verifying_text_1">You\'ve tried to register</string>
+    <string name="verifying_text_2">recently. Wait before requesting an SMS with your code.</string>
+    <string name="wrong_number">Wrong number?</string>
+    <string name="resend_sms">Resend SMS</string>
+    <string name="welcome">Welcome, +%s</string>
+    <string name="logout">Logout</string>
+    <string name="failed_pin_code">The code you entered is incorrect. Please try later.</string>
+</resources>
